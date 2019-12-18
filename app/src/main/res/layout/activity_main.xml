@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/harts"
+            tools:ignore="MissingConstraints"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Enter user name:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText android:layout_width= "200dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/editUserName"
+              tools:ignore="MissingConstraints"
+              tools:layout_editor_absoluteY="311dp"
+              tools:layout_editor_absoluteX="115dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter password:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/editPassword"
+              tools:ignore="MissingConstraints,UnknownId"
+              tools:layout_editor_absoluteY="400dp"
+              tools:layout_editor_absoluteX="115dp"/>
+    <Button
+            android:text="login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:onClick="login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,OnClick"
+            android:layout_marginTop="500dp"
+            app:layout_constraintHorizontal_bias="0.529"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
