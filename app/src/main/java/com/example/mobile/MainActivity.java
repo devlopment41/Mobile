@@ -8,12 +8,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.model.Account;
 
 public class MainActivity extends AppCompatActivity {
     Button OK;
     Context context=this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Account account = new Account();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
