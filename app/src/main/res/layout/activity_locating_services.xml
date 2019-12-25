@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+    <Button
+            android:text="Clinics"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:id="@+id/Clinics"/>
+    <Button
+            android:text="Therapists"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:id="@+id/Therapists"/>
+    <Button
+            android:text="Doctors"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:id="@+id/Doctors"/>
+    <Button
+            android:text="Nurses"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:id="@+id/Nurses"/>
+    <Button
+            android:text="Institutes"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:id="@+id/Institutes"/>
+    <Button
+            android:text="Laboratories"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:id="@+id/Laboratories"/>
+    <Button
+            android:text="Supplemental POS"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:id="@+id/SupplementalPOS"/>
+    <Button
+            android:text="Emergency Medicine"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:id="@+id/EmergencyMedicine"/>
+    <Button
+            android:text="Pharmacies"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:id="@+id/Pharmacies"/>
+    <Button
+            android:text="Psychologist"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:id="@+id/Psychologists"/>
+    <Button
+            android:text="dental clinic"
+            android:layout_width="132dp"
+            android:layout_height="50dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:id="@+id/dentalClinic"/>
+    <Button
+            android:text="Tipat Chalav"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:id="@+id/button18"/>
+    <TextView
+            android:text="Locating services"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="132dp"
+            android:layout_height="150dp"
+            android:gravity="center"/>
+
+
+</GridLayout>

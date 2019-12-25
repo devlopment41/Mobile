@@ -9,12 +9,28 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".LocatingServicesActivity">
+        </activity>
+        <activity android:name=".MedicalFileActivity">
+        </activity>
+        <activity android:name=".CommitmentsActivity">
+        </activity>
+        <activity android:name=".TestsActivity">
+        </activity>
+        <activity android:name=".VisitActivity">
+        </activity>
+        <activity android:name=".MedicationsAndPrescriptionsActivity">
+        </activity>
+        <activity android:name=".InquiriesActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".QueueActivity">
         </activity>
     </application>
 
