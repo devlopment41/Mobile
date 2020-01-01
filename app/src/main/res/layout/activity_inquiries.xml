@@ -3,7 +3,11 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chez"
+            android:layout_marginLeft="355dp"/>
     <TextView
             android:text="Inquiries To My Doctor"
             android:textSize="45dp"
@@ -12,6 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:gravity="center"/>
-
+<!--    <Button-->
+<!--            android:text="Doctors"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="436dp"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:drawableTop="@drawable/harts"-->
+<!--            android:id="@+id/Doctors"/>-->
 
 </LinearLayout>

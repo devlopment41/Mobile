@@ -5,7 +5,7 @@
               android:layout_height="match_parent">
 
 <TextView
-        android:text="My queues"
+        android:text="My Queues"
         android:textSize="45dp"
         android:textStyle="bold"
         android:textAlignment="center"

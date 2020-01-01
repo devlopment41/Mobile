@@ -5,13 +5,38 @@
               android:layout_height="match_parent">
 
     <TextView
-            android:text="My medicines"
+            android:text="My Medicines"
             android:textSize="45dp"
             android:textStyle="bold"
             android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:gravity="center"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        <Button
+                android:text="Drug Approvals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button7" android:layout_weight="1"/>
+        <Button
+                android:text="Items you purchased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button8" android:layout_weight="1"/>
+        <Button
+                android:text="Regular medications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button9" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+            android:text="----------- Digital prescriptions -----------"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"/>
 
 
 </LinearLayout>
