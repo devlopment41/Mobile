@@ -16,16 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:gravity="center"/>
-<!--    <Button-->
-<!--            android:text="Doctors"-->
-<!--            android:textSize="20dp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="436dp"-->
-<!--            android:drawablePadding="10dp"-->
-<!--            android:background="@android:color/transparent"-->
-<!--            android:layout_alignParentBottom="true"-->
-<!--            android:drawableTop="@drawable/harts"-->
-<!--            android:id="@+id/Doctors"/>-->
+    <Button
+            android:text="Queue Reservation"
+            android:textStyle="bold"
+            android:layout_width="350dp"
+            android:layout_height="370dp"
+            android:id="@+id/QueueReservation"
+            android:layout_marginLeft="40dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/tre"
+
+    />
 
 </LinearLayout>

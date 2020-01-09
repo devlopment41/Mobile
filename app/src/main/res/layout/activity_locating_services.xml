@@ -54,16 +54,17 @@
             <Button
                     android:text="social workers"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="2"
+                    android:textStyle="bold"
                     android:id="@+id/button12"/>
             <Button
                     android:text="Dietitians"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-
+                    android:textStyle="bold"
                     android:layout_column="3"
                     android:id="@+id/Dietitians"/>
             <Button
@@ -72,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="4"
+                    android:textStyle="bold"
                     android:id="@+id/hospitals"/>
 
         </TableRow>
@@ -82,12 +84,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="2"
+                    android:textStyle="bold"
                     android:id="@+id/Nurses"/>
             <Button
                     android:text="Institutes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
                     android:layout_column="3"
                     android:id="@+id/Institutes"/>
             <Button
@@ -96,6 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="4"
+                    android:textStyle="bold"
                     android:id="@+id/Laboratories"/>
 
         </TableRow>
@@ -106,13 +111,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="2"
+                    android:textStyle="bold"
                     android:id="@+id/Psychologist"/>
             <Button
                     android:text="dental clinic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-
+                    android:textStyle="bold"
                     android:layout_column="3"
                     android:id="@+id/dentalClinic"/>
             <Button
@@ -121,6 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="4"
+                    android:textStyle="bold"
                     android:id="@+id/TipatChalav"/>
 
         </TableRow>
@@ -131,6 +138,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="2"
+                    android:textStyle="bold"
                     android:id="@+id/SupplementalPOS"/>
             <Button
                     android:text="Emergency Medicine"
@@ -138,6 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="3"
+                    android:textStyle="bold"
                     android:id="@+id/EmergencyMedicine"/>
             <Button
                     android:text="Pharmacies"
@@ -145,6 +154,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_column="4"
+                    android:textStyle="bold"
                     android:id="@+id/Pharmacies"/>
 
         </TableRow>

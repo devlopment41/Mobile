@@ -9,21 +9,47 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".LocatingServicesActivity">
+        <activity android:name=".DigitalActivity">
         </activity>
-        <activity android:name=".MedicalFileActivity">
+        <activity
+                android:name=".TitleBar"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".CommitmentsActivity">
+        <activity
+                android:name=".LocatingDoctorsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".TestsActivity">
+        <activity
+                android:name=".LocatingServicesActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".VisitActivity">
+        <activity
+                android:name=".MedicalFileActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".MedicationsAndPrescriptionsActivity">
+        <activity
+                android:name=".CommitmentsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".InquiriesActivity">
+        <activity
+                android:name=".TestsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity
+                android:name=".VisitActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".MedicationsAndPrescriptionsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".InquiriesActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

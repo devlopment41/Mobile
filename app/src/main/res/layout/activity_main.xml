@@ -1,55 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <TextView
-            android:text="My Application"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:textAlignment="center"
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:gravity="center"/>
-    <Button
-            android:text="Queue Reservation"
-            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:theme="?attr/actionBarTheme"
+                android:layout_height="150dp"
+                android:id="@+id/toolbar"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp"/>
+
+
+
+
+        <TextView
+                android:text="My Application"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:background="#73DDEB"
+                android:textColor="#EBF2F3"/>
+        <TextView
+                android:text="אביטן שלי"
+                android:textSize="20dp"
+                android:background="@drawable/back"
+                android:textStyle="bold"
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                tools:layout_editor_absoluteY="104dp"
+                tools:layout_editor_absoluteX="148dp"
+                android:id="@+id/textView16"
+                android:textColor="#E3F1F3"
+                tools:ignore="MissingConstraints"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:background="@drawable/arrow"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="12dp" tools:layout_editor_absoluteX="350dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/QueueReservation"/>
-    <Button
-            android:text="Contact your doctor online"
-            android:layout_width="wrap_content"
+            android:paddingTop="50dp"
+    >
+
+        <Button
+                android:text="Queue Reservation"
+                android:textColor="#06525C"
+                android:background="#A8F0FA"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:id="@+id/QueueReservation"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+
+        />
+        <Button
+                android:text="Contact your doctor online"
+
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/Contact"
+                android:textColor="#06525C"
+                android:background="#A8F0FA"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Contact"/>
+            android:paddingTop="50dp"
+    >
     <Button
             android:text="Medications and prescriptions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/MedicationsAndPrescriptions"/>
+            android:textStyle="bold"
+            android:textColor="#06525C"
+            android:background="#A8F0FA"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/MedicationsAndPrescriptions"
+            android:layout_marginLeft="40dp"
+    />
     <Button
             android:text="Visit without a ticket"
-            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#06525C"
+            android:background="#A8F0FA"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/visit"
+            android:layout_marginLeft="30dp"
+    />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/visit"/>
+            android:paddingTop="40dp"
+    >
+        <Button
+                android:text="Tests"
+                android:textStyle="bold"
+                android:textColor="#06525C"
+                android:background="#A8F0FA"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:id="@+id/Tests"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+        />
+        <Button
+                android:text="Detection of services and emergency medicine"
+                android:textStyle="bold"
+                android:textColor="#06525C"
+                android:background="#A8F0FA"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:id="@+id/services"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="1.5dp"
+        />
+
+    </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+        >
     <Button
-            android:text="Tests"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Tests" />
-    <Button
-            android:text="Detection of services and emergency medicine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/services"/>
-    <Button
+
             android:text="medical file"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/medicalFile"/>
+            android:textColor="#06525C"
+            android:background="#A8F0FA"
+            android:textStyle="bold"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/medicalFile"
+    android:layout_marginLeft="40dp"/>
     <Button
             android:text="Commitments"
-            android:layout_width="wrap_content"
+            android:textColor="#06525C"
+            android:background="#A8F0FA"
+            android:textStyle="bold"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/Commitments"
+            android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+    <Button
+            android:text="hgfgh"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Commitments"/>
+            android:id="@+id/button20"/>
+
+
 </LinearLayout>

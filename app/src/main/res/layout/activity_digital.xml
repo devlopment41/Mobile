@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <LinearLayout android:lay
+out_width="match_parent"-->
+<!--                  android:layout_height="wrap_content"-->
+<!--                  android:orientation="vertical"/>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="159dp">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:theme="?attr/actionBarTheme"
+                android:layout_height="155dp"
+
+                android:id="@+id/toolbar"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp"/>
+        <TextView
+                android:text="Talk To Us On Digital"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                tools:ignore="MissingConstraints"
+                android:background="#73DDEB"
+                android:textColor="#EBF2F3"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+    >
+
+        <Button
+                android:textColor="#06525C"
+                android:background="@drawable/icon"
+                android:textStyle="bold"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/QueueReservation"
+
+        />
+        <Button
+                android:textStyle="bold"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/Contact"
+                android:background="@drawable/watsup"
+        />
+        <Button
+                android:background="@drawable/call"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/visit1"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <TextView
+                android:text="WhatsApp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/textView30"/>
+        <TextView
+                android:text="chat"
+                android:layout_width="100dp"
+                android:gravity="center"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/textView28"/>
+        <TextView
+                android:text="call"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/textView36"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+    >
+
+        <Button
+                android:textStyle="bold"
+                android:textColor="#06525C"
+                android:background="@drawable/messeg"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:id="@+id/MedicationsAndPrescriptions"
+                android:layout_marginLeft="30dp"
+        />
+        <Button
+                android:textStyle="bold"
+                android:textColor="#06525C"
+                android:background="@drawable/email"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:id="@+id/visit"
+                android:layout_marginLeft="30dp"
+        />
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+            android:text="Messenger"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/textView2"/>
+    <TextView
+            android:text="Email"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/textView29"/>
+        </LinearLayout>
+
+
+    <TextView
+            android:text="The focus is active from Sunday to Thursday"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView177"/>
+    <TextView
+            android:text="     from   08:00 - 19:00"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/textView17"/>
+    <TextView
+            android:text="----------------------------------------------------------------------------------"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView18"/>
+    <TextView
+            android:text="Nursing center. Accompanying Pregnancy"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"/>
+
+    <TextView
+            android:text="The service is active from Sunday to Thursday"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView178"/>
+    <TextView
+            android:text="     from   08:00 - 19:00"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/textView179"/>
+    <Button
+            android:textStyle="bold"
+            android:textColor="#06525C"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:id="@+id/MedicationsAndPrescriptions12"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/watsup"
+
+    />
+    <TextView
+            android:text="Chat with a nurse"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+
+            android:id="@+id/textView21"/>
+    <TextView
+            android:text="----------------------------------------------------------------------------------"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView22"/>
+
+
+</LinearLayout> </ScrollView>
