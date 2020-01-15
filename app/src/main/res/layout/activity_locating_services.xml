@@ -1,172 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
-    <TextView
-            android:text="Locating Services"
-            android:textSize="45dp"
-            android:textStyle="bold"
-            android:textAlignment="center"
+              android:layout_height="match_parent"
+              android:background="#E8BCF5">
+    <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:gravity="center"/>
-    <TableLayout
+            android:layout_height="140dp">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:theme="?attr/actionBarTheme"
+                android:layout_height="130dp"
+                android:id="@+id/toolbar"/>
+        <TextView
+                android:text="Locating Services"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:gravity="center"
+                android:background="#5C1349"
+                android:textColor="#EBF2F3"/>
+        <TextView
+                android:text="אביטן שלי"
+                android:textSize="20dp"
+                android:background="@drawable/back"
+                android:textStyle="bold"
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginTop="112dp"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/textView16"
+                android:textColor="#E3F1F3"/>
+        <ImageButton
+                android:id="@+id/bake"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:background="@drawable/downarrow"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="47dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:stretchColumns="*">
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:layout_marginLeft="20dp">
+        <Button
+                android:text="Clinics"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/Clinics"
+                android:layout_marginLeft="20dp"/>
+        <Button
+                android:text="Therapists"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/Therapists"
+                android:layout_marginLeft="30dp"/>
+        <Button
+                android:text="Doctors"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/Doctors"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:layout_marginLeft="20dp">
+        <Button
+                android:text="social workers"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:id="@+id/socialWrkers"
+                android:layout_marginLeft="20dp"/>
+        <Button
+                android:text="Dietitians"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/Dietitians"
+                android:layout_marginLeft="30dp"/>
+        <Button
+                android:text="hospitals"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/hospitals"
+                android:layout_marginLeft="30dp"/>
 
-        <TableRow>
-            <Button
-                    android:text="Clinics"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="2"
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:layout_marginLeft="20dp">
+        <Button
+                android:text="Nurses"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
 
-                    android:id="@+id/button11"/>
-            <Button
-                    android:text="Therapists"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                android:id="@+id/Nurses"
+                android:layout_marginLeft="20dp"/>
+        <Button
+                android:text="Institutes"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:id="@+id/Institutes"
+                android:layout_marginLeft="30dp"/>
+        <Button
+                android:text="Laboratories"
+                android:textSize="12dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:id="@+id/Laboratories"
+                android:layout_marginLeft="30dp"/>
 
-                    android:layout_column="3"
-                    android:id="@+id/button1"/>
-            <Button
-                    android:text="Doctors"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_column="4"
-                    android:id="@+id/Doctors"/>
-        </TableRow>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:layout_marginLeft="20dp">
+        <Button
+                android:text="Supplemental POS"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:id="@+id/SupplementalPOS"
+                android:layout_marginLeft="20dp"/>
+        <Button
+                android:text="Emergency Medicine"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/EmergencyMedicine"/>
+        <Button
+                android:text="Pharmacies"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/Pharmacies"/>
 
-        <TableRow
-                android:stretchColumns="*" >
-            <Button
-                    android:text="social workers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="2"
-                    android:textStyle="bold"
-                    android:id="@+id/button12"/>
-            <Button
-                    android:text="Dietitians"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:layout_column="3"
-                    android:id="@+id/Dietitians"/>
-            <Button
-                    android:text="hospitals"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="4"
-                    android:textStyle="bold"
-                    android:id="@+id/hospitals"/>
-
-        </TableRow>
-        <TableRow>
-            <Button
-                    android:text="Nurses"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="2"
-                    android:textStyle="bold"
-                    android:id="@+id/Nurses"/>
-            <Button
-                    android:text="Institutes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:layout_column="3"
-                    android:id="@+id/Institutes"/>
-            <Button
-                    android:text="Laboratories"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="4"
-                    android:textStyle="bold"
-                    android:id="@+id/Laboratories"/>
-
-        </TableRow>
-        <TableRow>
-            <Button
-                    android:text="Psychologist"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="2"
-                    android:textStyle="bold"
-                    android:id="@+id/Psychologist"/>
-            <Button
-                    android:text="dental clinic"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:layout_column="3"
-                    android:id="@+id/dentalClinic"/>
-            <Button
-                    android:text="Tipat Chalav"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="4"
-                    android:textStyle="bold"
-                    android:id="@+id/TipatChalav"/>
-
-        </TableRow>
-        <TableRow>
-            <Button
-                    android:text="Supplemental POS"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="2"
-                    android:textStyle="bold"
-                    android:id="@+id/SupplementalPOS"/>
-            <Button
-                    android:text="Emergency Medicine"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="3"
-                    android:textStyle="bold"
-                    android:id="@+id/EmergencyMedicine"/>
-            <Button
-                    android:text="Pharmacies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_column="4"
-                    android:textStyle="bold"
-                    android:id="@+id/Pharmacies"/>
-
-        </TableRow>
-
-    </TableLayout>
-
-
-
-
-
-
-</LinearLayout>
-
-
-
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:layout_marginLeft="20dp">
+        <Button
+                android:text="Psychologists"
+                android:textSize="10dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/Psychologists"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"/>
+        <Button
+                android:text="Dental clinics"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/DentalClinics"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"/>
+        <Button
+                android:text="Tipat chalav"
+                android:textSize="13dp"
+                android:paddingTop="25dp"
+                android:background="@drawable/arround"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/TipaChalav"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout> </ScrollView>

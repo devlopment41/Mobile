@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:theme="?attr/actionBarTheme"
+                android:layout_height="130dp"
+                android:id="@+id/toolbar"/>
+        <TextView
+                android:text="Locating Dental Clinics"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:gravity="center"
+                android:background="#5C1349"
+                android:textColor="#EBF2F3"/>
+        <TextView
+                android:text="אביטן שלי"
+                android:textSize="20dp"
+                android:background="@drawable/back"
+                android:textStyle="bold"
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginTop="112dp"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/textView16"
+                android:textColor="#E3F1F3"/>
+        <ImageButton
+                android:id="@+id/bake"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:background="@drawable/arrow"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="47dp"/>
+
+
+    </RelativeLayout>
+    <Button
+            android:id="@+id/bSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="16dp"
+            android:text="Search"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:textSize="24sp"/>
+
+
+
+</LinearLayout>

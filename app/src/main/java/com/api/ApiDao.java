@@ -1,25 +1,31 @@
 package com.api;
 
+import android.content.Context;
 import android.util.Pair;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class ApiDao {
+    private static RequestQueue queue;
 
-    static private String URL = "http://localhost:8080/";
+    static private String URL = "http://10.0.2.2:8888";
 
 
     private static String getUrl(String cmd, Pair... params) {
@@ -66,28 +72,43 @@ public class ApiDao {
     }
 
 
-    public static <T> void launch(String url, TypeReference<T> type, ToDo todo,  Pair... pairs) {
+    public static <T> void launch(String url, final TypeReference<T> type, final ToDo todo,Context lancher , Pair... pairs) {
+
 
         String urls = getUrl(url, pairs);
 
-        ObjectMapper mapper = new ObjectMapper();
+        final ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        mapper.setVisibility(PropertyAccessor.FIELD, Visibility.ANY);
+        mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
 
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
         // Instantiate the RequestQueue.
+
+        queue = Volley.newRequestQueue(lancher);
+        System.out.println("call " + urls);
+
         StringRequest stringRequest = new StringRequest(Request.Method.GET, urls, new Response.Listener<String>() {
+
             @Override
             public void onResponse(String response) {
-                todo.doSome(mapper.readValue(json, template));
+                try {
+                    System.out.println("הגיעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעע");
+
+                    todo.doSome(mapper.readValue(response, type));
+
+
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                throw new RuntimeException(e);
+                throw new RuntimeException(error);
             }
         });
 
+        queue.add(stringRequest);
 
     }
 
