@@ -5,4 +5,5 @@
     <string name="app_name"></string>
     <color name="titlebackgroundcolor">#3232CD</color>
     <color name="titletextcolor">#FFFF00</color>
+
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.example.mobile">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.mobile">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -12,64 +13,87 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
-            android:usesCleartextTraffic="true" tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".HomeUrineTestActivity"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".DoctorsActivity"
                   android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ECGActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".LocatingServicesActivity2">
         </activity>
-        <activity android:name=".PregnancyProtectorActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".HomeUrineTestActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".TipatChalavActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".ECGActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".DentalClinicsActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".PregnancyProtectorActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".PharmaciesActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".TipatChalavActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".EmergencyMedicineActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".DentalClinicsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".SupplementalPOSActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".PharmaciesActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".LaboratoriesActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".EmergencyMedicineActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".InstitutesActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".SupplementalPOSActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".NursesActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".LaboratoriesActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".HospitalsActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".InstitutesActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".DietitiansActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".NursesActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".SocialWrkersActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".HospitalsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ClinicsActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".DietitiansActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".TherapistsActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".SocialWrkersActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".RegularMedicationsActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".ClinicsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ItemsYouPurchasedActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".TherapistsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".DrugApprovalsActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
-
+        <activity
+                android:name=".RegularMedicationsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ItemsYouPurchasedActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DrugApprovalsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
                 android:name=".LaboratoryTestHistoryActivity"

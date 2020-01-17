@@ -34,7 +34,7 @@ public class TestsActivity extends AppCompatActivity {
         OK = (Button) findViewById(R.id.ECG);
         OK.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(TestsActivity.this, CommitmentsActivity.class);
+                Intent intent = new Intent(TestsActivity.this, ECGActivity.class);
                 startActivity(intent);
 
             }
@@ -53,7 +53,7 @@ public class TestsActivity extends AppCompatActivity {
         });        OK = (Button) findViewById(R.id.HomeUrineTest);
         OK.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(TestsActivity.this, CommitmentsActivity.class);
+                Intent intent = new Intent(TestsActivity.this, HomeUrineTestActivity.class);
                 startActivity(intent);
 
             }
@@ -62,7 +62,7 @@ public class TestsActivity extends AppCompatActivity {
         });        OK = (Button) findViewById(R.id.PregnancyProtector);
         OK.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(TestsActivity.this, CommitmentsActivity.class);
+                Intent intent = new Intent(TestsActivity.this, PregnancyProtectorActivity.class);
                 startActivity(intent);
 
             }

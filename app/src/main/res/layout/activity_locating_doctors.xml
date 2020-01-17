@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="140dp">
@@ -20,8 +26,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:gravity="center"
-                android:background="#EE2E3030"
-                android:textColor="#B6B8B8"/>
+                android:background="#5C1349"
+                android:textColor="#EBF2F3"/>
         <TextView
                 android:text="אביטן שלי"
                 android:textSize="20dp"
@@ -44,64 +50,249 @@
 
 
     </RelativeLayout>
-    <TextView
-            android:text="Doctor locating"
-            android:layout_width="313dp"
-            android:layout_height="52dp" android:id="@+id/textView3"/>
-    <EditText
-            android:layout_width="match_parent"
+    <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="For example : eyes Beer Sheva"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="15dp">
+        <Button
+                android:id="@+id/bbSearch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:textSize="24sp"/>
+    <EditText
+            android:layout_width="270dp"
+            android:layout_height="40dp"
             android:textColor="#FF5E6161"
             android:ems="10"
-            android:id="@+id/searchDoctors"/>
+            android:layout_gravity="center"
+            android:id="@+id/searchDoctors"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:hint="  For example: beer sheva, eyes"
+            android:imeOptions="actionSearch"/>
+    </LinearLayout>
+
     <Button
-            android:id="@+id/bSearch"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="320dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:padding="16dp"
-            android:text="Search"
+            android:id="@+id/openSearch"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Advanced Search"
+            android:layout_marginLeft="100dp"
             android:drawableLeft="@android:drawable/ic_menu_search"
-            android:textSize="24sp"/>
+            android:textSize="15dp"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/upLinear">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginLeft="10dp">
+        <TextView
+                android:text="Doctor name"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="40dp" />
+        <Spinner
+                android:id="@+id/name"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+               />
 
 
+        <TextView
+            android:text="Field treatment"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="40dp" />
+        <Spinner
+                android:id="@+id/treatment"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
 
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="10dp">
+        <TextView
+                android:text="City"
+                android:textStyle="bold"
+                android:layout_width="82dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+        <Spinner
+                android:id="@+id/city"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+        />
+
+
+        <TextView
+                android:text="Area"
+                android:textStyle="bold"
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+        <Spinner
+                android:id="@+id/Area"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+        <TextView
+                android:text="Reception days"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                android:layout_width="42dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+        <CheckBox
+                android:text="SUN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2"/>
+        <CheckBox
+                android:text="MUN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox3"/>
+        <CheckBox
+                android:text="TUS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox8"/>
+        <CheckBox
+                android:text="WEDNES"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox9"/>
+        <CheckBox
+                android:text="THURS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox10"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+        <TextView
+                android:text="gender"
+                android:textStyle="bold"
+                android:layout_width="122dp"
+                android:gravity="center"
+                android:layout_height="40dp" />
+        <CheckBox
+                android:text="male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox22"/>
+        <CheckBox
+                android:text="female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox33"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+        <TextView
+                android:text="Activity time"
+                android:textStyle="bold"
+                android:layout_width="122dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="40dp" />
+        <CheckBox
+                android:text="Morning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Morning"/>
+        <CheckBox
+                android:text="noon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noon"/>
+        <CheckBox
+                android:text="evening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/evening"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+    <TextView
+            android:text="Languages"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/doctorName"/>
+    <Spinner
+            android:id="@+id/Languages"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+            <Button
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_gravity="center"
+                    android:text="Search"
+                    android:textSize="15dp"/>
 </LinearLayout>
-<!--<androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--        xmlns:tools="http://schemas.android.com/tools"-->
-<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        tools:context=".LocatingDoctorsActivity" android:visibility="visible">-->
-<!--    <TextView-->
-<!--            android:text="Locating Doctors"-->
-<!--            android:textSize="45dp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textAlignment="center"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="110dp"-->
-<!--            android:gravity="center"-->
-<!--            tools:ignore="MissingConstraints" android:id="@+id/textView12"/>-->
-<!--    <TextView-->
-<!--            android:text="Enter a doctor there to search"-->
-<!--            android:layout_width="300dp"-->
-<!--            android:layout_height="55dp"-->
-<!--            tools:layout_editor_absoluteX="55dp"-->
-<!--            android:textSize="20dp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:gravity="center"-->
-<!--            android:id="@+id/textView2"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/textView12"/>-->
-<!--    <Button-->
-<!--            android:text="Advanced Search >"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content" tools:layout_editor_absoluteY="165dp"-->
-<!--            tools:layout_editor_absoluteX="122dp" android:id="@+id/button14" tools:ignore="MissingConstraints"/>-->
+        <Button
+                android:id="@+id/close"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:text="To close"
+                android:textSize="15dp"/>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
 <!--    <TextView-->
 <!--            android:text="Found"-->
 <!--            android:layout_width="wrap_content"-->
@@ -117,11 +308,7 @@
 <!--            android:layout_width="70dp"-->
 <!--            android:layout_height="wrap_content" tools:layout_editor_absoluteY="231dp"-->
 <!--            tools:layout_editor_absoluteX="66dp" android:id="@+id/textView6"/>-->
-<!--    <TextView-->
-<!--            android:text="Reset filtering"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content" tools:layout_editor_absoluteY="231dp"-->
-<!--            tools:layout_editor_absoluteX="297dp" android:id="@+id/textView7"/>-->
+
 <!--    <Button-->
 <!--            android:text="relevance"-->
 <!--            android:layout_width="wrap_content"-->
