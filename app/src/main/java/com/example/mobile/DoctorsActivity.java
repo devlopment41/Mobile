@@ -39,22 +39,34 @@ public class DoctorsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        search = (Button) findViewById(R.id.search);
-        search.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                ApiDao.launch("doctor", new TypeReference<List<Doctor>>() {
-
-                }, new ApiDao.ToDo() {
-
-                    @Override
-                    public void doSome(Object in) {
-                        List<Doctor> doctors = (List<Doctor>) in;
 
 
-                    }
-                }, context);
-            }
-        });
+
+
+
+
+
+
+
+
+
+
+//        search = (Button) findViewById(R.id.search);
+//        search.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//                ApiDao.launch("doctor", new TypeReference<List<Doctor>>() {
+//
+//                }, new ApiDao.ToDo() {
+//
+//                    @Override
+//                    public void doSome(Object in) {
+//                        List<Doctor> doctors = (List<Doctor>) in;
+//
+//
+//                    }
+//                }, context);
+//            }
+//        });
 
 
 

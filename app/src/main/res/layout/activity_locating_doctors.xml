@@ -176,27 +176,27 @@
                 android:text="SUN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkBox2"/>
+                android:id="@+id/SUN"/>
         <CheckBox
-                android:text="MUN"
+                android:text="MON"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkBox3"/>
+                android:id="@+id/MON"/>
         <CheckBox
                 android:text="TUS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkBox8"/>
+                android:id="@+id/TUS"/>
         <CheckBox
                 android:text="WEDNES"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkBox9"/>
+                android:id="@+id/WEDNES"/>
         <CheckBox
                 android:text="THURS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkBox10"/>
+                android:id="@+id/THURS"/>
 
     </LinearLayout>
     <LinearLayout
@@ -215,12 +215,12 @@
                 android:text="male"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkBox22"/>
+                android:id="@+id/male"/>
         <CheckBox
                 android:text="female"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/checkBox33"/>
+                android:id="@+id/female"/>
 
     </LinearLayout>
     <LinearLayout
@@ -293,21 +293,6 @@
 </LinearLayout>
 </LinearLayout>
 </ScrollView>
-<!--    <TextView-->
-<!--            android:text="Found"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content" tools:layout_editor_absoluteY="231dp"-->
-<!--            tools:layout_editor_absoluteX="26dp" android:id="@+id/textView3"/>-->
-<!--    <TextView-->
-<!--            android:text="Doctors"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content" tools:layout_editor_absoluteY="231dp"-->
-<!--            tools:layout_editor_absoluteX="136dp" android:id="@+id/textView4"/>-->
-<!--    <TextView-->
-<!--            android:text=""-->
-<!--            android:layout_width="70dp"-->
-<!--            android:layout_height="wrap_content" tools:layout_editor_absoluteY="231dp"-->
-<!--            tools:layout_editor_absoluteX="66dp" android:id="@+id/textView6"/>-->
 
 <!--    <Button-->
 <!--            android:text="relevance"-->

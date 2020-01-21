@@ -92,7 +92,6 @@ public class ApiDao {
             @Override
             public void onResponse(String response) {
                 try {
-                    System.out.println("הגיעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעעע");
 
                     todo.doSome(mapper.readValue(response, type));
 

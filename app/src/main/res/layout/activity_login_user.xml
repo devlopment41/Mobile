@@ -20,19 +20,19 @@
 
         <!-- Email Label -->
 
-            <EditText android:id="@+id/input_email1"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:inputType="textEmailAddress"
-                      android:hint="Email" />
+        <EditText android:id="@+id/IDNumber"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textEmailAddress"
+                  android:hint="ID number" />
 
         <!-- Password Label -->
 
-            <EditText android:id="@+id/input_password1"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:inputType="textPassword"
-                      android:hint="Password"/>
+        <EditText android:id="@+id/input_password1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textPassword"
+                  android:hint="Password"/>
 
         <Button
                 android:id="@+id/btn_login1"

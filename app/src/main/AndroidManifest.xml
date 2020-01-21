@@ -14,8 +14,21 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".DoctorsActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SignupUserActivity">
+        </activity>
+        <activity android:name=".LoginUserActivity">
+        </activity>
+        <activity
+                android:name=".LoginActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".SignupActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DoctorsActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".LocatingServicesActivity2">
         </activity>

@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         OK = (Button) findViewById(R.id.QueueReservation);
         OK.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, QueueActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoginUserActivity.class);
                 startActivity(intent);
 
             }
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         OK = (Button) findViewById(R.id.Contact);
         OK.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, InquiriesActivity.class);
+                Intent intent = new Intent(MainActivity.this, SignupUserActivity.class);
                 startActivity(intent);
 
             }
