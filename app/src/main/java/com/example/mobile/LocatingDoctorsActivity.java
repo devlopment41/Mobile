@@ -31,10 +31,10 @@ public class LocatingDoctorsActivity extends AppCompatActivity {
     public String[] cites = new String[]{"Jerusalem", "Beitar", "Tel aviv"};
     public String[] Areas = new String[]{"Central Israel", "Jerusalem and the surrounding area", "north", "South"};
     public Spinner SLanguages,STreatment,SCites,SNames,SAreas;
+    public String [] days = new String[]{};
     Context context=this;
     String gender,day;
     public int IdDB;
-
     String getGenderMale(boolean checked){
       if(checked==true)
           gender="male";
@@ -42,11 +42,47 @@ public class LocatingDoctorsActivity extends AppCompatActivity {
           gender="female";
         return gender;
     }
-    String getSunDay(boolean checked){
+    String getSunday(boolean checked){
         if(checked)
             day="Sunday";
+        else {
+            day="";
+        }
         return day;
     }
+    String getMonday(boolean checked){
+        if(checked)
+            day="Monday";
+        else {
+            day="";
+        }
+        return day;
+    }
+    String getTuesday(boolean checked){
+        if(checked)
+            day="Tuesday";
+        else {
+            day="";
+        }
+        return day;
+    }
+    String getWednesday(boolean checked){
+        if(checked)
+            day="Wednesday";
+        else {
+            day="";
+        }
+        return day;
+    }
+    String getThursday(boolean checked){
+        if(checked)
+            day="Thursday";
+        else {
+            day="";
+        }
+        return day;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -194,17 +230,21 @@ public class LocatingDoctorsActivity extends AppCompatActivity {
 //        CheckBox female = (CheckBox) findViewById(R.id.female);
 //        selectGender = getGenderMale(!(male.isChecked()));
         CheckBox SUN = (CheckBox) findViewById(R.id.SUN);
-        selectSUN = getSunDay(SUN.isChecked());
+        selectSUN = getSunday(SUN.isChecked());
         CheckBox MON = (CheckBox) findViewById(R.id.MON);
-        selectMON = getSunDay(MON.isChecked());
+        selectMON = getMonday(MON.isChecked());
         CheckBox TUS = (CheckBox) findViewById(R.id.TUS);
-        selectTUS = getSunDay(TUS.isChecked());
+        selectTUS = getTuesday(TUS.isChecked());
         CheckBox WEDNES = (CheckBox) findViewById(R.id.WEDNES);
-        selectWEDNES = getSunDay(WEDNES.isChecked());
+        selectWEDNES = getWednesday(WEDNES.isChecked());
         CheckBox THURS = (CheckBox) findViewById(R.id.THURS);
-        selectTHURS = getSunDay(THURS.isChecked());
+        selectTHURS = getThursday(THURS.isChecked());
 
 
+
+//        for(int i=0; i<6; i++){
+//          if()
+//        }
 
         search = (Button) findViewById(R.id.search);
                 search.setOnClickListener(new View.OnClickListener() {

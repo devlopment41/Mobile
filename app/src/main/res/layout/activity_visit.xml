@@ -13,6 +13,7 @@
                 android:theme="?attr/actionBarTheme"
                 android:layout_height="130dp"
                 android:id="@+id/toolbar"/>
+
         <TextView
                 android:text="Visit Without A Ticket"
                 android:textSize="43dp"

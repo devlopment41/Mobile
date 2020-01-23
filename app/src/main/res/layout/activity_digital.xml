@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:android="http://schemas.android.com/apk/res/android">
@@ -9,10 +10,8 @@
 out_width="match_parent"-->
 <!--                  android:layout_height="wrap_content"-->
 <!--                  android:orientation="vertical"/>-->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="vertical"
+    <LinearLayout
+            android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
         <RelativeLayout
@@ -55,39 +54,39 @@ out_width="match_parent"-->
                     android:layout_marginTop="47dp"/>
 
         </RelativeLayout>
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="30dp"
-    >
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+        >
 
-        <Button
-                android:textColor="#06525C"
-                android:background="@drawable/icon"
-                android:textStyle="bold"
-                android:layout_width="100dp"
-                android:layout_height="75dp"
-                android:layout_marginLeft="30dp"
-                android:id="@+id/QueueReservation"
+            <Button
+                    android:textColor="#06525C"
+                    android:background="@drawable/icon"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/QueueReservation"
 
-        />
-        <Button
-                android:textStyle="bold"
-                android:layout_width="100dp"
-                android:layout_height="75dp"
-                android:layout_marginLeft="30dp"
-                android:id="@+id/Contact"
-                android:background="@drawable/watsup"
-        />
-        <Button
-                android:background="@drawable/call"
-                android:layout_width="100dp"
-                android:layout_height="75dp"
-                android:layout_marginLeft="30dp"
-                android:id="@+id/visit1"/>
-    </LinearLayout>
-    <LinearLayout
+            />
+            <ImageButton
+                    android:src="@drawable/chatbubble"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/visit1"/>
+            <Button
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/Contact"
+                    android:background="@drawable/chatbubble"
+            />
+        </LinearLayout>
+        <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -220,10 +219,11 @@ out_width="match_parent"-->
             android:background="@drawable/watsup"
 
     />
-    <TextView
+
+        <TextView
             android:text="Chat with a nurse"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:gravity="center"
             android:layout_marginLeft="30dp"
 

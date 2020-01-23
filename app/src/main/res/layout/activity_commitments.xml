@@ -46,5 +46,9 @@
 
 
     </RelativeLayout>
-
+    <ListView
+            android:id="@+id/mobile_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+    </ListView>
 </LinearLayout>

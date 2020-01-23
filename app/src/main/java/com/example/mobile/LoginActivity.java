@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.*;
 
@@ -12,18 +14,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private static final String TAG = "LoginActivity";
-    private static final int REQUEST_SIGNUP = 0;
-    EditText  _emailText =  (EditText)findViewById(R.id.input_email1);
-    EditText _passwordText =  (EditText)findViewById(R.id.input_password1);
-    Button _loginButton = (Button) findViewById(R.id.btn_login1);
-    TextView _signupLink = (TextView) findViewById(R.id.link_signup1);
+//    private static final String TAG = "LoginActivity";
+//    private static final int REQUEST_SIGNUP = 0;
+//    EditText  _emailText =  (EditText)findViewById(R.id.input_email1);
+//    EditText _passwordText =  (EditText)findViewById(R.id.input_password1);
+//    Button _loginButton = (Button) findViewById(R.id.btn_login1);
+//    TextView _signupLink = (TextView) findViewById(R.id.link_signup1);
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+    }
+
 
 //        _loginButton.setOnClickListener(new View.OnClickListener() {
 //
@@ -128,5 +132,5 @@ public class LoginActivity extends AppCompatActivity {
 //
 //        return valid;
 //    }
+//    }
     }
-}
