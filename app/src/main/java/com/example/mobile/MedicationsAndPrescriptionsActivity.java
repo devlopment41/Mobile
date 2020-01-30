@@ -25,7 +25,7 @@ public class MedicationsAndPrescriptionsActivity extends AppCompatActivity {
     Context context=this;
     ImageButton IB;
 
-    Doctor d = new Doctor();
+//    Doctor d = new Doctor();
 
 
     @Override
@@ -37,7 +37,7 @@ public class MedicationsAndPrescriptionsActivity extends AppCompatActivity {
         IB = (ImageButton) findViewById(R.id.bake);
         IB.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MedicationsAndPrescriptionsActivity.this, MainActivity.class);
+                Intent intent = new Intent(MedicationsAndPrescriptionsActivity.this, Main2Activity.class);
                 startActivity(intent);
             }
         });
@@ -76,23 +76,23 @@ public class MedicationsAndPrescriptionsActivity extends AppCompatActivity {
         final TextView name = (TextView) findViewById(R.id.name);
         TextView phone = (TextView) findViewById(R.id.phone);
         TextView address = (TextView) findViewById(R.id.address);
-        ApiDao.launch("user", new TypeReference<List<User>>() {
-        }, new ApiDao.ToDo() {
-
-            @Override
-            public void doSome(Object in) {
-
-                List<User> users = (List<User>) in;
-
-                for (User user : users)
-
-                    name.setText(user.getUser_name());
-
-            }
-        },this);
-
-        phone.setText("" + d.getPhone());
-        address.setText(d.getAddress());
+//        ApiDao.launch("user", new TypeReference<List<User>>() {
+//        }, new ApiDao.ToDo() {
+//
+//            @Override
+//            public void doSome(Object in) {
+//
+//                List<User> users = (List<User>) in;
+//
+//                for (User user : users)
+//
+//                    name.setText(user.getUser_name());
+//
+//            }
+//        },this);
+//
+//        phone.setText("" + d.getPhone());
+//        address.setText(d.getAddress());
     }
 
 

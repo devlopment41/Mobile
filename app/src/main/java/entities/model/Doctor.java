@@ -28,6 +28,27 @@ public class Doctor extends DBObject {
 
     private  String city;
     private String  street;
+
+    public Doctor(String name, String email, int phone, String address, String gender, String activity_time, String reception_days,
+                  String language, String field_treatment, String serviceArea, String city, String street) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+        this.gender = gender;
+        this.activity_time = activity_time;
+        this.reception_days = reception_days;
+        this.language = language;
+        this.field_treatment = field_treatment;
+        ServiceArea = serviceArea;
+        this.city = city;
+        this.street = street;
+    }
+
+    public Doctor() {
+
+    }
+
     public String getStreet() {
         return street;
     }
@@ -130,4 +151,21 @@ public class Doctor extends DBObject {
     }
 
 
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phone=" + phone +
+                ", address='" + address + '\'' +
+                ", gender='" + gender + '\'' +
+                ", activity_time='" + activity_time + '\'' +
+                ", reception_days='" + reception_days + '\'' +
+                ", language='" + language + '\'' +
+                ", field_treatment='" + field_treatment + '\'' +
+                ", ServiceArea='" + ServiceArea + '\'' +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                '}';
+    }
 }

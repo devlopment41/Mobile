@@ -26,24 +26,33 @@ public class MailActivity extends Activity {
     }
 
     protected void sendEmail() {
-        Log.i("Send email", "");
-        String[] TO = {"chaya1724@gmail.com"};
-        String[] CC = {""};
-        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+//        Log.i("Send email", "");
+//        String[] TO = {"chaya1724@gmail.com"};
+//        String[] CC = {""};
+//        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+//
+//        emailIntent.setData(Uri.parse("mailto:"));
+//        emailIntent.setType("text/plain");
+//        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+//        emailIntent.putExtra(Intent.EXTRA_CC, CC);
+//        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Your subject");
+//        emailIntent.putExtra(Intent.EXTRA_TEXT, "Email message goes here");
+//
+//
 
-        emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-        emailIntent.putExtra(Intent.EXTRA_CC, CC);
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Your subject");
-        emailIntent.putExtra(Intent.EXTRA_TEXT, "Email message goes here");
 
-        try {
-            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-            finish();
-            Log.i("Finished email...", "");
-        } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(MailActivity.this, "There is no email client installed.", Toast.LENGTH_SHORT).show();
-        }
+        Intent mailIntent = new Intent(Intent.ACTION_VIEW);
+        Uri data = Uri.parse("mailto:?subject=" + "subject text"+ "&body=" + "body text " + "&to=" + "destination@mail.com");
+        mailIntent.setData(data);
+        System.out.println("hjggjgkkkkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj");
+        startActivity(Intent.createChooser(mailIntent, "Send mail..."));
+
+//        try {
+//            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+//            finish();
+//            Log.i("Finished email...", "");
+//        } catch (android.content.ActivityNotFoundException ex) {
+//            Toast.makeText(MailActivity.this, "There is no email client installed.", Toast.LENGTH_SHORT).show();
+//        }
     }
 }

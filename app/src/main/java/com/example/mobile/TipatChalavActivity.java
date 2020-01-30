@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 
 public class TipatChalavActivity extends AppCompatActivity {
 
@@ -19,6 +20,8 @@ public class TipatChalavActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipat_chalav);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         IB = (ImageButton) findViewById(R.id.bake);
         IB.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

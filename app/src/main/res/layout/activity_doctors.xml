@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+
+<LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:android="http://schemas.android.com/apk/res/android">
-<LinearLayout
-        android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
 
     <RelativeLayout
             android:layout_width="match_parent"
@@ -49,90 +47,37 @@
 
     </RelativeLayout>
 
-
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="400dp"
-                  android:orientation="vertical">
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="horizontal"
-                  android:layout_marginTop="15dp">
-        <TextView
-                android:text="Found"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        <TextView
-                android:text="            "
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView6"/>
-        <TextView
-                android:text="Doctors"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-    </LinearLayout>
-        <TextView
-                android:text="Dr' ........"
-                android:textStyle="bold"
-                android:textSize="30dp"
-                android:layout_marginLeft="20dp"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:id="@+id/textView8"/>
-
-
-            <LinearLayout android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:orientation="horizontal"
-                          android:layout_marginTop="15dp">
-                <TextView
-                        android:text="Service area"
-                        android:textStyle="bold"
-                        android:textSize="25dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView9"/>
-                <TextView
-                        android:text="TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_gravity="center"
-                        android:id="@+id/textView10"/>
-            </LinearLayout>
-
-        <LinearLayout android:layout_width="match_parent"
+                <LinearLayout android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:orientation="horizontal"
                               android:layout_marginTop="15dp">
-                <TextView
-                        android:text="specialization"
-                        android:textStyle="bold"
-                        android:textSize="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView11"/>
-                <TextView
-                        android:text="       ------------------------------------------------------------------------------------"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView13"/>
+                    <TextView
+                            android:text="Found"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:text="     1       "
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView6"/>
+                    <TextView
+                            android:text="Doctors"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+    <ListView
+            android:id="@+id/doctors_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </ListView>
 
-        </LinearLayout>
-
-    </LinearLayout>
 </LinearLayout>
 
-</ScrollView>
+

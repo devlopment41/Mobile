@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 
 public class SocialWrkersActivity extends AppCompatActivity {
 
@@ -18,6 +19,8 @@ public class SocialWrkersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         setContentView(R.layout.activity_social_wrkers);
         IB = (ImageButton) findViewById(R.id.bake);
         IB.setOnClickListener(new View.OnClickListener() {

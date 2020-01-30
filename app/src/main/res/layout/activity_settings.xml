@@ -66,7 +66,7 @@
                 android:layout_marginLeft="30dp"
                 android:paddingRight="45dp"
                 android:layout_marginTop="20dp"
-                android:id="@+id/button"
+                android:id="@+id/updateUserInformation"
                 android:background="@drawable/arround"/>
         <Button
                 android:text="Password change"
@@ -80,7 +80,7 @@
                 android:paddingTop="5dp"
                 android:paddingLeft="10dp"
                 android:background="@drawable/arround"
-                android:id="@+id/button2"/>
+                android:id="@+id/passwordChange"/>
         <Button
                 android:text="Updating mailing preferences"
                 android:textSize="18dp"
@@ -90,7 +90,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/arround"
-                android:id="@+id/button3"/>
+                android:id="@+id/updatingMailing"/>
         <Button
                 android:text="Accessibility statement"
                 android:textSize="18dp"
@@ -102,7 +102,7 @@
                 android:paddingRight="45dp"
                 android:paddingTop="5dp"
                 android:background="@drawable/arround"
-                android:id="@+id/button4"/>
+                android:id="@+id/accessibilityStatement"/>
         <Button
                 android:text="Order magnetic card"
                 android:textSize="18dp"
@@ -115,7 +115,7 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="23dp"
                 android:background="@drawable/arround"
-                android:id="@+id/button5"/>
+                android:id="@+id/orderMagneticCard"/>
         <Button
                 android:text="Disengagement from personal area"
                 android:textSize="18dp"
@@ -127,7 +127,7 @@
                 android:paddingRight="5dp"
                 android:paddingTop="10dp"
                 android:background="@drawable/arround"
-                android:id="@+id/button6"/>
+                android:id="@+id/disengagementFromPersonalArea"/>
 
 
     </LinearLayout> </ScrollView>

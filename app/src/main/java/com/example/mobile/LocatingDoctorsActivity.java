@@ -19,9 +19,9 @@ import java.util.List;
 
 public class LocatingDoctorsActivity extends AppCompatActivity {
 
-    public Button OK,openSearch,close, search;;
+    public Button OK,openSearch,close, search,bSearch;;
     public ImageButton IB;
-    public String cityDB,SpecialtyDB,nameDB, areaDB,languagesDB,dayDB,genderDB,timeDB;
+    public String cityDB,SpecialtyDB,nameDB, areaDB,languagesDB,dayDB,genderDB,timeDB,searchDoctors2,city,Specialty;
     public LinearLayout upLinear1;
     public String selectLanguages,selectName,selectTreatment,selectCity,selectArea,selectGender;
     public String selectSUN,selectMON,selectTUS,selectWEDNES,selectTHURS;
@@ -32,8 +32,11 @@ public class LocatingDoctorsActivity extends AppCompatActivity {
     public String[] Areas = new String[]{"Central Israel", "Jerusalem and the surrounding area", "north", "South"};
     public Spinner SLanguages,STreatment,SCites,SNames,SAreas;
     public String [] days = new String[]{};
+    public EditText searchDoctors;
     Context context=this;
     String gender,day;
+    String [] arraySearchDoctors2 = new String [5];
+    String pic = ",";
     public int IdDB;
     String getGenderMale(boolean checked){
       if(checked==true)
@@ -266,18 +269,7 @@ public class LocatingDoctorsActivity extends AppCompatActivity {
                                     genderDB = doctor.getGender();
                                     timeDB =doctor.getActivity_time();
                                     IdDB = doctor.getId();
-//                                    ApiDao.launch("days", new TypeReference<List<Days>>() {
-//
-//                                    }, new ApiDao.ToDo() {
-//
-//                                        @Override
-//                                        public void doSome(Object in) {
-//                                            List<Days> days = (List<Days>) in;
-//                                            for (Days day : days) {
-//                                                if(day.getDoctorId()== doctor.getId())
-//                                            }
-//                                        }
-//                                    }, context);
+
                                 if (nameDB!=null||cityDB!=null||areaDB!=null||SpecialtyDB!=null||languagesDB!=null||dayDB!=null||genderDB!=null||timeDB!=null) {
                                     if (selectName.contains(nameDB) || selectArea.contains(areaDB) ||
                                             selectCity.contains(cityDB) || selectTreatment.contains(SpecialtyDB) ||
@@ -287,10 +279,10 @@ public class LocatingDoctorsActivity extends AppCompatActivity {
                                         System.out.println(cityDB);
                                         System.out.println(nameDB);
 
+                                        Intent intent = new Intent(LocatingDoctorsActivity.this, DoctorsActivity.class);
+                                        intent.putExtra("nameDoctor", doctor.getName());
+                                        startActivity(intent);
 
-//                                        doctorName2 = doctor.getName();
-//                                        TextView doctorName = (TextView) findViewById(R.id.doctorName);
-//                                        doctorName.setText(doctorName2);
 
                                     } else {
                                         System.out.println("not find");
@@ -315,6 +307,44 @@ public class LocatingDoctorsActivity extends AppCompatActivity {
                 openSearch.setVisibility(View.VISIBLE);
             }
         });
+        bSearch = (Button) findViewById(R.id.bSearch);
+        bSearch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                searchDoctors = (EditText)findViewById(R.id.searchDoctors);
+                ApiDao.launch("doctor", new TypeReference<List<Doctor>>() {
 
+                }, new ApiDao.ToDo() {
+
+                    @Override
+                    public void doSome(Object in) {
+                        List<Doctor> doctors = (List<Doctor>) in;
+                for (Doctor doctor : doctors) {
+                                        cityDB = doctor.getCity();
+                                        SpecialtyDB = doctor.getField_treatment();
+                                        EditText searchDoctors1 = (EditText) findViewById(R.id.searchDoctors);
+                                        searchDoctors2 = searchDoctors1.getEditableText().toString();
+                                        arraySearchDoctors2 = searchDoctors2.split(pic);
+                                        System.out.println(searchDoctors2);
+                                        System.out.println(arraySearchDoctors2);
+                                        city = arraySearchDoctors2[0];
+//                                        Specialty = arraySearchDoctors2[1];
+                                        System.out.println(city);
+                                        System.out.println(cityDB);
+                                        System.out.println(Specialty);
+                                        System.out.println(SpecialtyDB);
+                                        if (city.contains(cityDB) || Specialty.contains(SpecialtyDB)) {
+                                            Intent intent = new Intent(LocatingDoctorsActivity.this, DoctorsActivity.class);
+                                            intent.putExtra("nameDoctor", doctor.getName());
+                                            startActivity(intent);
+
+
+                                        } else {
+                                            System.out.println("not find");
+                                          }
+
+            }}}, context);
+
+        }
+    });
     }
 }

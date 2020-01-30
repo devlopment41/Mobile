@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/new_game"
-          android:icon="@drawable/settingsn"
+
+    <item android:id="@+id/Login"
           android:title="Login"/>
-    <item android:id="@+id/help"
-          android:icon="@drawable/settings"
-          android:title="Signup" />
+
+    <item android:id="@+id/SignUp"
+          android:title="SignUp" />
+
+    <item android:id="@+id/Contact"
+          android:title="Contact us"/>
+
+    <item android:id="@+id/About"
+          android:title="About" />
 </menu>

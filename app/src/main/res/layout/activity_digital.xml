@@ -5,11 +5,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:android="http://schemas.android.com/apk/res/android">
-
-<!--    <LinearLayout android:lay
-out_width="match_parent"-->
-<!--                  android:layout_height="wrap_content"-->
-<!--                  android:orientation="vertical"/>-->
     <LinearLayout
             android:orientation="vertical"
               android:layout_width="match_parent"
@@ -63,27 +58,27 @@ out_width="match_parent"-->
 
             <Button
                     android:textColor="#06525C"
-                    android:background="@drawable/icon"
+                    android:background="@drawable/speec"
                     android:textStyle="bold"
-                    android:layout_width="100dp"
-                    android:layout_height="75dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_marginLeft="30dp"
-                    android:id="@+id/QueueReservation"
+                    android:id="@+id/whatsApp"
 
             />
-            <ImageButton
-                    android:src="@drawable/chatbubble"
-                    android:layout_width="100dp"
-                    android:layout_height="75dp"
-                    android:layout_marginLeft="30dp"
-                    android:id="@+id/visit1"/>
+            <Button
+                    android:background="@drawable/chatbubble"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="45dp"
+                    android:id="@+id/chat"/>
             <Button
                     android:textStyle="bold"
-                    android:layout_width="100dp"
-                    android:layout_height="75dp"
-                    android:layout_marginLeft="30dp"
-                    android:id="@+id/Contact"
-                    android:background="@drawable/chatbubble"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="45dp"
+                    android:id="@+id/call"
+                    android:background="@drawable/call2"
             />
         </LinearLayout>
         <LinearLayout
@@ -96,7 +91,7 @@ out_width="match_parent"-->
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
                 android:id="@+id/textView30"/>
         <TextView
                 android:text="chat"
@@ -112,7 +107,7 @@ out_width="match_parent"-->
                 android:gravity="center"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="25dp"
                 android:id="@+id/textView36"/>
     </LinearLayout>
     <LinearLayout
@@ -125,20 +120,20 @@ out_width="match_parent"-->
         <Button
                 android:textStyle="bold"
                 android:textColor="#06525C"
-                android:background="@drawable/messeg"
-                android:layout_width="100dp"
-                android:layout_height="75dp"
-                android:id="@+id/MedicationsAndPrescriptions"
+                android:background="@drawable/messenger2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/messenger"
                 android:layout_marginLeft="30dp"
         />
         <Button
                 android:textStyle="bold"
                 android:textColor="#06525C"
-                android:background="@drawable/icon"
-                android:layout_width="100dp"
-                android:layout_height="75dp"
-                android:id="@+id/visit"
-                android:layout_marginLeft="30dp"
+                android:background="@drawable/email2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/email"
+                android:layout_marginLeft="45dp"
         />
     </LinearLayout>
 
@@ -154,14 +149,14 @@ out_width="match_parent"-->
             android:layout_width="100dp"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:id="@+id/textView2"/>
     <TextView
             android:text="Email"
             android:layout_width="100dp"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             android:id="@+id/textView29"/>
         </LinearLayout>
 
@@ -211,21 +206,21 @@ out_width="match_parent"-->
     <Button
             android:textStyle="bold"
             android:textColor="#06525C"
-            android:layout_width="100dp"
-            android:layout_height="75dp"
-            android:id="@+id/MedicationsAndPrescriptions12"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/chatWithANurse"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
-            android:background="@drawable/watsup"
+            android:background="@drawable/chatbubble"
 
     />
 
         <TextView
             android:text="Chat with a nurse"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
 
             android:id="@+id/textView21"/>
     <TextView

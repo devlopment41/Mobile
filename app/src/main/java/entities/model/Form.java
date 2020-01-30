@@ -14,6 +14,28 @@ public class Form extends DBObject {
 
     private int document_id;
 
+    public Form(String name, String issue, Date date, int document_id, int isRealized) {
+        this.name = name;
+        this.issue = issue;
+        this.date = date;
+        this.document_id = document_id;
+        this.isRealized = isRealized;
+    }
+
+    public int getIsRealized() {
+        return isRealized;
+    }
+
+    public void setIsRealized(int isRealized) {
+        this.isRealized = isRealized;
+    }
+
+    private int isRealized;
+
+
+
+
+
     public String getName() {
         return name;
     }
@@ -44,5 +66,24 @@ public class Form extends DBObject {
 
     public void setDocument_id(int document_id) {
         this.document_id = document_id;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj==this)
+            return true;
+        if(obj==null || obj.getClass()!=this.getClass())
+            return false;
+        Form b=(Form) obj;
+        return (name.equals(b.getName()));
+    }
+
+    @Override
+    public String toString() {
+        return "Form{" +
+                "name='" + name + '\'' +
+                ", issue='" + issue + '\'' +
+                ", date=" + date +
+                ", document_id=" + document_id +
+                '}';
     }
 }

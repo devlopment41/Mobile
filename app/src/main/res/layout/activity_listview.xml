@@ -1,23 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="19dp"
               android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:background="@drawable/arround"
+              android:layout_marginBottom="25dp"
+              android:layout_gravity="center"
+              android:id="@+id/layoutForm"
+              android:onClick="goTo">
+
     <TextView
-            android:id="@+id/label"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:padding="10dip"
-              android:textSize="16dip"
-              android:textStyle="bold" >
-    </TextView>
-    <Button
-            android:id="@+id/btn"
-            android:text="wow"
+            android:id="@+id/name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
             android:textStyle="bold"
-            android:textSize="20dp"
-            android:layout_width="370dp"
-            android:layout_marginLeft="20dp"
-            android:drawableRight="@drawable/rightchevron"
-            android:layout_height="100dp"/>
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+    <TextView
+            android:id="@+id/NumberOfCommitments"
+            android:text="Number of commitments:"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <TextView
+            android:id="@+id/idDocument"
+            android:text=""
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isRealized"
+            android:layout_marginLeft="70dp"/>
+    <TextView
+            android:id="@+id/check"
+            android:text="Realized"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rightchevron"
+    android:clickable="true"/>
+
+</LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+    <TextView
+            android:id="@+id/date1"
+            android:text="Date:"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
 </LinearLayout>

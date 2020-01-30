@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    android:background="@drawable/arround"
+    android:onClick="goToDoctor">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/doctor"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+            <TextView
+                    android:text="Dr' Layboviz Oshrat"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dName"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView
+                        android:text="Service area:"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9"/>
+                <TextView
+                        android:text="               "
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/serviceArea"/>
+            </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp">
+        <Button
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/calendarrr"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                        <TextView
+                                                android:text="Sunday 22\01\2020"
+                                                android:textStyle="bold"
+                                                android:textSize="15dp"
+                                                android:layout_marginLeft="20dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/data1"/>
+
+                        <TextView
+                                                android:text="At 3:30 p.m."
+                                                android:textStyle="bold"
+                                                android:textSize="15dp"
+                                                android:layout_marginLeft="20dp"
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/textView112"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/rightchevron"/>
+    </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp">
+            <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/clinic1"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView
+                        android:text="Visit to the clinic in Masada 7"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView161"/>
+
+                <TextView
+                        android:text="9.8kg from you"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1124"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+</ScrollView>

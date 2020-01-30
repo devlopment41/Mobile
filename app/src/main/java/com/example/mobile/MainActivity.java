@@ -20,17 +20,17 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     synchronized (this) {
-                        wait(2000);
-                        Intent intent = new Intent(MainActivity.this,Main2Activity.class);
-                        startActivity(intent);
+                        wait(4000);
+                        Intent in = new Intent(MainActivity.this,Main2Activity.class);
+                        in.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                        startActivity(in);
                         finish();
-
                     }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-
         }).start();
+
     }
 }

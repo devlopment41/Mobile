@@ -59,6 +59,7 @@
                 android:textSize="13dp"
                 android:paddingTop="25dp"
                 android:background="@drawable/arround"
+                android:drawableTop="@drawable/ambulanc"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:id="@+id/Clinics"
@@ -70,6 +71,7 @@
                 android:background="@drawable/arround"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:layout_gravity="center"
                 android:id="@+id/Therapists"
                 android:layout_marginLeft="30dp"/>
         <Button
@@ -80,6 +82,7 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:id="@+id/Doctors"
+                android:layout_gravity="center"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="10dp"/>
     </LinearLayout>

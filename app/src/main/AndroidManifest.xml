@@ -22,7 +22,53 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".MailActivity">
+        <activity android:name=".CallActivity">
+        </activity>
+        <activity android:name=".MessengerActivity">
+        </activity>
+        <activity android:name=".ChatActivity">
+        </activity>
+        <activity android:name=".WhatsAppActivity">
+        </activity>
+        <activity android:name=".AboutActivity">
+        </activity>
+        <activity
+                android:name=".DisengagementFromPersonalAreaActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".OrderMagneticCardActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".AccessibilityStatementActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".UpdatingMailingPreferencesActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".PasswordChangeActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".UpdateUserInformationActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".UpLoadToServer1Activity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".UploadToServer">
+        </activity>
+        <activity
+                android:name=".CommitmentFormActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".MailActivity"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
                 android:name=".Main2Activity"
@@ -47,8 +93,6 @@
         <activity
                 android:name=".DoctorsActivity"
                 android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".LocatingServicesActivity2">
         </activity>
         <activity
                 android:name=".HomeUrineTestActivity"

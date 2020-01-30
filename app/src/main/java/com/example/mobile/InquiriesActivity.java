@@ -26,7 +26,7 @@ public class InquiriesActivity extends AppCompatActivity {
         IB = (ImageButton) findViewById(R.id.bake);
         IB.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(InquiriesActivity.this, MainActivity.class);
+                Intent intent = new Intent(InquiriesActivity.this, Main2Activity.class);
                 startActivity(intent);
             }
         });

@@ -25,10 +25,69 @@ public class DigitalActivity extends AppCompatActivity {
         IB = (ImageButton) findViewById(R.id.bake);
         IB.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(DigitalActivity.this, MainActivity.class);
+                Intent intent = new Intent(DigitalActivity.this, Main2Activity.class);
                 startActivity(intent);
             }
         });
+        OK = (Button) findViewById(R.id.email);
+        OK.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(DigitalActivity.this, MailActivity.class);
+                startActivity(intent);
 
+            }
+
+
+        });
+        OK = (Button) findViewById(R.id.whatsApp);
+        OK.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(DigitalActivity.this, WhatsAppActivity.class);
+                startActivity(intent);
+
+            }
+
+
+        });
+        OK = (Button) findViewById(R.id.chat);
+        OK.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(DigitalActivity.this, ChatActivity.class);
+                startActivity(intent);
+
+            }
+
+
+        });
+        OK = (Button) findViewById(R.id.call);
+        OK.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(DigitalActivity.this, CallActivity.class);
+                startActivity(intent);
+
+            }
+
+
+        });
+        OK = (Button) findViewById(R.id.messenger);
+        OK.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(DigitalActivity.this, MessengerActivity.class);
+                startActivity(intent);
+
+            }
+
+
+        });
+        OK = (Button) findViewById(R.id.chatWithANurse);
+        OK.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(DigitalActivity.this, ChatActivity.class);
+                startActivity(intent);
+
+            }
+
+
+        });
     }
 }
